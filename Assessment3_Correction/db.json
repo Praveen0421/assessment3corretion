@@ -1,0 +1,121 @@
+{
+  "employeeData": [
+    {
+      "firstname": "Praveen",
+      "lastname": "Rai",
+      "department": "Frontend",
+      "address": "Valsad",
+      "email": "raipraveen421@gmail.com",
+      "contactnumber": 9898652396,
+      "description": "Developer",
+      "password": "1234567890",
+      "confirmpassword": "1234567890",
+      "status": "Active",
+      "id": 3
+    },
+    {
+      "firstname": "Tatsat",
+      "lastname": "Patel",
+      "department": "Frontend",
+      "address": "Valsad",
+      "email": "tatsatpatel99@gmail.com",
+      "contactnumber": 6353269852,
+      "description": "I am developer",
+      "password": "12345678",
+      "confirmpassword": "12345678",
+      "status": "Active",
+      "id": 4
+    },
+    {
+      "firstname": "Prince",
+      "lastname": "Makwana",
+      "department": "Frontend",
+      "address": "Valsad",
+      "email": "makwanaprince0912@gmail.com",
+      "contactnumber": 8956895642,
+      "description": "developer",
+      "password": "123456789",
+      "confirmpassword": "123456789",
+      "status": "Active",
+      "id": 5
+    },
+    {
+      "firstname": "Jaydeep",
+      "lastname": "Panchal",
+      "department": "Frontend",
+      "address": "Valsad",
+      "email": "panchaljaydeepkumar@gmail.com",
+      "contactnumber": 7894563200,
+      "description": "developer",
+      "password": "1234567890",
+      "confirmpassword": "1234567890",
+      "status": "Active",
+      "id": 6
+    },
+    {
+      "firstname": "Raj",
+      "lastname": "Lad",
+      "department": "Frontend",
+      "address": "Valsad",
+      "email": "rajlad1099@gmail.com",
+      "contactnumber": 784569321,
+      "description": "developer",
+      "password": "1234567890",
+      "confirmpassword": "1234567890",
+      "status": "Active",
+      "id": 7
+    },
+    {
+      "firstname": "Tanushi",
+      "lastname": "Solanky",
+      "department": "Frontend",
+      "address": "Valsad",
+      "email": "tanushisolanky@gmail.com",
+      "contactnumber": 7845963210,
+      "description": "developer",
+      "password": "1234567890",
+      "confirmpassword": "1234567890",
+      "status": "Active",
+      "id": 8
+    },
+    {
+      "firstname": "Jaitry",
+      "lastname": "Patel",
+      "department": "Frontend",
+      "address": "Valsad",
+      "email": "pateljaitry1122@gmail.com",
+      "contactnumber": 7896541235,
+      "description": "developer",
+      "password": "1234567890",
+      "confirmpassword": "1234567890",
+      "status": "Active",
+      "id": 9
+    },
+    {
+      "firstname": "Archana",
+      "lastname": "Patel",
+      "department": "Frontend",
+      "address": "Valsad",
+      "email": "adipatel2820@gmail.com",
+      "contactnumber": 7531596452,
+      "description": "developer",
+      "password": "123456789",
+      "confirmpassword": "123456789",
+      "status": "Active",
+      "id": 10
+    },
+    {
+      "firstname": "Priyanshi",
+      "lastname": "Tripathi",
+      "department": "Frontend",
+      "address": "Valsad",
+      "email": "tripathipriyanshi681@gmail.com",
+      "contactnumber": 8795642312,
+      "description": "developer",
+      "password": "123456789",
+      "confirmpassword": "123456789",
+      "status": "Active",
+      "id": 11
+    }
+  ]
+}

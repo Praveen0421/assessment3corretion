@@ -1,0 +1,141 @@
+.employee-list {
+  height: 100%;
+  overflow: hidden;
+}
+@media only screen and (min-width:0px) {
+  .employee-list{
+      padding: 10px 20px 20px 20px;
+  }
+}
+@media only screen and (min-width:768px) {
+  .employee-list{
+      padding: 10px 100px 20px 100px;
+  }
+}
+@media only screen and (min-width:1024px) {
+  .employee-list{
+      padding: 0px 200px 20px 200px;
+  }
+}
+/* employee header */
+.employee-header {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tableTitle {
+  font-weight: 600;
+  color: #405e7c;
+}
+/* search-block */
+.search-block{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1.5px solid #717171;
+    padding: 10px 16px 10px 12px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* search-and-addbtn-block */
+.search-and-addbtn-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search-icon{
+    font-size: 18px;
+    color:#717171;
+}
+.search-box{
+    border: none;
+    outline: none;
+    width: 110px;
+}
+.search-and-addbtn-block .addbtn {
+  background: #0077b3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1.5px solid #0077b3;
+}
+/* table-container */
+.table-container {
+  overflow: auto;
+  height: 100%;
+}
+/* table */
+.table {
+  height: 100%;
+  text-align: left;
+  width: 100%;
+}
+
+thead tr th:last-child {
+  border: 1.5px solid #d1e2e5;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.emailDecoration {
+  text-decoration: underline;
+}
+tbody,
+tr {
+  border: 1.5px solid #d1e2e5;
+  border-collapse: collapse;
+}
+th {
+  padding-top: 16px;
+  padding-bottom: 18px;
+  font-size: 16px;
+}
+td {
+  padding-top: 16px;
+  padding-bottom: 18px;
+  font-size: 16px;
+}
+@media screen and (min-width:0px) {
+  td,th{
+    min-width: 150px;
+  }
+}
+@media screen and (min-width:1440px) {
+  td,th{
+    min-width: auto;
+  }
+}
+.greenText {
+  color: #00b733;
+  font-weight: 600;
+}
+.redText {
+  color: #b70000;
+  font-weight: 600;
+}
+/* action btn */
+.action-btn {
+  cursor: pointer;
+}
+
+.action-btn-block {
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.edit-icon {
+  color: #0177b3;
+  font-size: 23px;
+}
+.delete-icon {
+  color: #0278b3;
+  font-size: 23px;
+}

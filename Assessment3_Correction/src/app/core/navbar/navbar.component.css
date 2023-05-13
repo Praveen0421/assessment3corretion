@@ -1,0 +1,63 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #b3b3b3 0px 0px 10px 0px;
+}
+@media only screen and (min-width:0px) {
+    .header{
+        padding-left:20px;
+        padding-right:20px;
+    }
+}
+@media only screen and (min-width:768px) {
+    .header{
+        padding-left:100px;
+        padding-right:100px;
+    }
+}
+@media only screen and (min-width:991px) {
+    .header{
+        padding-left:200px;
+        padding-right:200px;
+    }
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select-user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.brand-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+.name-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8e8e8;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #414141;
+    font-weight: 700;
+    height: 40px;
+    width: 40px;
+}
+#user{
+    outline: none;
+     appearance: none; /* Remove default styling */
+     padding-right: 20px; /* Adjust the right padding to create space for the arrow */
+     background-image: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png");
+     background-repeat: no-repeat;
+     background-position: right center; /* Position the image to the right and center vertically */
+     background-size: 16px;
+    border: none;
+    font-weight: 600;
+}

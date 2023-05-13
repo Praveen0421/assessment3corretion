@@ -1,0 +1,161 @@
+<!-- form section start -->
+<section class="employee-form">
+    <!-- header -->
+    <header class="form-header">
+        <h4 class="form-title">Add Employee</h4>
+    </header>
+    <!-- form container -->
+    <div class="form-box">
+        <form [formGroup]="employee" (ngSubmit)="onSubmit(password,confirmpassword)" #form="ngForm" class="form">
+            <div class="input-container">
+                <!-- input block firstname and lastname -->
+                <div class="form-group row gx-5">
+                    <!-- firstname block -->
+                    <div class="form-group col-12 col-md-6">
+                        <label for="firstname" class="form-label">First Name</label>
+                        <input type="text"  class="form-control" formControlName="firstname"placeholder="First Name" id="firstname"
+                            [ngClass]="{'invalid': submitted && f['firstname'].errors}">
+                        <div *ngIf="submitted && f['firstname'].errors" class="feedback">
+                            <div *ngIf="f['firstname'].errors['required']">firstname is required</div>
+                            <div *ngIf="f['firstname'].errors['minlength']">min length 3</div>
+                            <div *ngIf="f['firstname'].errors['maxlength']">max length 25</div>
+                        </div>
+                        
+                    </div>
+                    <!-- lastname block -->
+                    <div class="form-group col-12 col-md-6 mt-3 mt-md-0">
+                        <label for="lastname" class="form-label">Last Name</label>
+                        <input type="text"  class="form-control" formControlName="lastname"placeholder="Last Name" id="lastname"
+                            [ngClass]="{'invalid': submitted && f['lastname'].errors}">
+                        <div *ngIf="submitted && f['lastname'].errors" class="feedback">
+                            <div *ngIf="f['lastname'].errors['required']">lastname is required</div>
+                            <div *ngIf="f['lastname'].errors['minlength']">min length 3</div>
+                            <div *ngIf="f['lastname'].errors['maxlength']">max length 25</div>
+                        </div>
+                        
+                    </div>
+      
+                </div>
+
+                <!-- input block email and department -->
+                <div class="row form-group gx-5  mt-3 mt-lg-4">
+                    <!--email block -->
+                    <div class="form-group col-12 col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email"  class="form-control" formControlName="email" placeholder="Enter email" id="email"
+                        [ngClass]="{'invalid': submitted && f['email'].errors}">
+                        <div *ngIf="submitted && f['email'].errors" class="feedback">
+                            <div *ngIf="f['email'].errors['required']">email is required</div>
+                            <div *ngIf="f['email'].errors['email']">enter correct email</div>
+                        </div>
+                    </div>
+                    <!-- department block -->
+                    <div class="form-group col-12 col-md-6 mt-3 mt-md-0">
+                        <label for="department" class="form-label">Department</label>
+                        <select name="department"  class="form-control form-select" id="department"formControlName="department"
+                        [ngClass]="{'invalid': submitted && f['department'].errors}">
+
+                            <option value="department">Department</option>
+                            <option value="Frontend">Frontend</option>
+                            <option value="Backend">Backend</option>
+                            <option value="QA">QA</option>
+                            <option value="BA">BA</option>
+                        </select>
+                        <div *ngIf="submitted && f['department'].errors" class="feedback">
+                            <div *ngIf="f['department'].errors['required']">department is required</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- input block address and contact number -->
+                <div class="form-group row form-group gx-5 mt-3 mt-lg-4">
+                    <!--Address block -->
+                    <div class="form-group col-12 col-md-6">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text"  class="form-control" formControlName="address" placeholder="Enter address" id="address"
+                        [ngClass]="{'invalid': submitted && f['address'].errors}">
+                        <div *ngIf="submitted && f['address'].errors" class="feedback">
+                            <div *ngIf="f['address'].errors['required']">address is required</div>
+                        </div>
+                    </div>
+                    <!-- contactnumber block -->
+                    <div class="form-group col-12 col-md-6 mt-3 mt-md-0">
+                        <label for="contactnumber" class="form-label">Contact Number</label>
+                        <input type="number"  class="form-control" formControlName="contactnumber" placeholder="Enter contact number" id="contactnumber"
+                        [ngClass]="{'invalid': submitted && f['contactnumber'].errors}">
+                        <div *ngIf="submitted && f['contactnumber'].errors" class="feedback">
+                            <div *ngIf="f['contactnumber'].errors['required']">contact number is required</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- input block description -->
+                <div class="form-group  mt-3 mt-lg-4">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="description"  class="form-control textArea-none" id="description" cols="20" rows="3" formControlName="description"placeholder="Description" id="description"
+                    [ngClass]="{'invalid': submitted && f['description'].errors}"></textarea>
+                    <div *ngIf="submitted && f['description'].errors" class="feedback">
+                        <div *ngIf="f['description'].errors['required']">description is required</div>
+                        <div *ngIf="f['description'].errors['minlength']">min length 3</div>
+                        <div *ngIf="f['description'].errors['maxlength']">max length 150</div>
+                    </div>
+                </div>
+
+                <!-- input block password and confirm password -->
+                <div class="form-group row form-group gx-5 mt-3 mt-lg-4">
+                    <!--email block -->
+                    <div class="form-group col-12 col-md-6">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password"  class="form-control" autocomplete="new-password" placeholder="Password" id="password" #password formControlName="password"
+                        [ngClass]="{'invalid': submitted && f['password'].errors}">
+                        <div *ngIf="submitted && f['password'].errors" class="feedback">
+                            <div *ngIf="f['password'].errors['required']">password is required</div>
+                            <div *ngIf="f['password'].errors['minlength']">min length 6</div>
+                            <div *ngIf="f['password'].errors['maxlength']">max length 25</div>
+                        </div>
+                    </div>
+                    <!-- department block -->
+                    <div class="form-group col-12 col-md-6 mt-3 mt-md-0">
+                        <label for="confirmpassword" class="form-label">Confirm password</label>
+                        <input type="password"  class="form-control" autocomplete="new-password" placeholder="Confirm password" id="confirmpassword" #confirmpassword formControlName="confirmpassword"
+                        [ngClass]="{'invalid': submitted && f['confirmpassword'].errors}">
+                        <div *ngIf="submitted && f['confirmpassword'].errors" class="feedback">
+                            <div *ngIf="f['confirmpassword'].errors['required']">confirm password is required</div>
+                            <div *ngIf="f['confirmpassword'].errors['minlength']">min length 6</div>
+                            <div *ngIf="f['confirmpassword'].errors['maxlength']">max length 25</div>                            
+                        
+                        </div>
+                    </div>
+                </div>
+                <!-- input block radio -->
+                <div class="input-block" class="form-label mt-3 mt-lg-4">
+                    <label for="">Status</label>
+                    <div class="d-flex  gap-2 mt-2"> 
+                        <div class="d-flex align-items-center">
+                            <input type="radio" name="status" id="active" value="Active" checked formControlName="status">
+                            <label for="active" class="mx-2 active-lable">Active</label>
+
+                        </div>  
+
+                        <div class="d-flex align-items-center">
+                            <input type="radio"  name="status" id="inactive" value="In Active" formControlName="status">
+                            <label for="inactive" class="mx-2 inactive-label">In Active</label>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div *ngIf="submitted && f['status'].errors" class="feedback">
+                    <div *ngIf="f['status'].errors['required']">status is required</div>
+                </div>
+            </div>
+
+        </form>
+            <!-- buttons -->
+            <div class="form-btns-block d-flex justify-content-end px-4 py-4 gap-3">
+                <button routerLink="/employeelist" routerLinkActive="router-link-active" class="btn cancle-btn" >Cancel</button>
+                <button type="submit" (click)="onSubmit(password,confirmpassword)" class="btn submit-btn">Submit</button>
+            </div>
+    </div>
+</section>
+<!-- form section end -->

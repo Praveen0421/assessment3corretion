@@ -1,0 +1,129 @@
+.employee-form {
+  height: 100%;
+  overflow: auto;
+}
+
+/* form-container */
+.form-box {
+  height: 100%;
+  margin-bottom: 220px;
+}
+/* input block */
+.input-block {
+  display: flex;
+}
+/* form-header */
+.form-header {
+  margin: 24px 0px 16px 0px;
+}
+/* form-title */
+.form-title {
+  font-weight: 600;
+  color: #405e7c;
+}
+/* form */
+.form {
+  width: 100%;
+  border: 1.5px solid #d1e2e5;
+  padding: 24px 40px;
+  font-size: 16px;
+}
+.form-label {
+  font-weight: 600;
+}
+
+.form-control {
+  padding: 14px 0px 14px 25px;
+  font-size: 18px;
+  border: 1.5px solid #777;
+  color: #2d2d2d;
+  border-radius: 5px;
+  appearance: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.form-control::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2d2d2d;
+}
+/* textArea-none */
+.textArea-none {
+  resize: none;
+}
+.active-lable,
+.inactive-label {
+  font-size: 17px;
+  font-weight: 500;
+}
+/* form-btns-block */
+.form-btns-block {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid #d1e2e5;
+  border-top: none;
+}
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+.cancle-btn {
+  color: #0077b3;
+  border: 1.5px solid #0077b3;
+  background: #fff;
+}
+.submit-btn {
+  color: #fff;
+  border: 1.5px solid #0077b3;
+  background: #0077b3;
+}
+.invalid {
+  border: 1px solid red;
+}
+
+.feedback {
+  font-size: 14px;
+  margin-top: 5px;
+  color: red;
+}
+@media only screen and (min-width: 0px) {
+  .employee-form {
+    padding: 10px 20px 20px 20px;
+  }
+  .form-box {
+    height: 100%;
+    margin-bottom: 900px;
+  }
+  .btn {
+    padding: 16px 50px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .employee-form {
+    padding: 10px 100px 20px 100px;
+  }
+  .btn {
+    padding: 16px 70px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  .form-btns-block {
+    display: flex;
+    flex-direction: row;
+  }
+  .form-box {
+    height: 100%;
+    margin-bottom: 250px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .employee-form {
+    padding: 0px 200px 20px 200px;
+  }
+}
