@@ -1,22 +1,9 @@
 .employee-list {
-  height: 100%;
+  margin-bottom: 500px;
   overflow: hidden;
+  height: 100%;
 }
-@media only screen and (min-width:0px) {
-  .employee-list{
-      padding: 10px 20px 20px 20px;
-  }
-}
-@media only screen and (min-width:768px) {
-  .employee-list{
-      padding: 10px 100px 20px 100px;
-  }
-}
-@media only screen and (min-width:1024px) {
-  .employee-list{
-      padding: 0px 200px 20px 200px;
-  }
-}
+
 /* employee header */
 .employee-header {
   margin: 20px 0px;
@@ -30,14 +17,14 @@
   color: #405e7c;
 }
 /* search-block */
-.search-block{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border: 1.5px solid #717171;
-    padding: 10px 16px 10px 12px;
-    border-radius: 5px;
-    overflow: hidden;
+.search-block {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1.5px solid #717171;
+  padding: 10px 16px 10px 12px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 /* search-and-addbtn-block */
@@ -46,14 +33,14 @@
   align-items: center;
   gap: 10px;
 }
-.search-icon{
-    font-size: 18px;
-    color:#717171;
+.search-icon {
+  font-size: 18px;
+  color: #717171;
 }
-.search-box{
-    border: none;
-    outline: none;
-    width: 110px;
+.search-box {
+  border: none;
+  outline: none;
+  width: 110px;
 }
 .search-and-addbtn-block .addbtn {
   background: #0077b3;
@@ -69,10 +56,10 @@
 .table-container {
   overflow: auto;
   height: 100%;
+  padding-bottom: 150px;
 }
 /* table */
 .table {
-  height: 100%;
   text-align: left;
   width: 100%;
 }
@@ -101,13 +88,15 @@ td {
   padding-bottom: 18px;
   font-size: 16px;
 }
-@media screen and (min-width:0px) {
-  td,th{
+@media screen and (min-width: 0px) {
+  td,
+  th {
     min-width: 150px;
   }
 }
-@media screen and (min-width:1440px) {
-  td,th{
+@media screen and (min-width: 1440px) {
+  td,
+  th {
     min-width: auto;
   }
 }
@@ -138,4 +127,19 @@ td {
 .delete-icon {
   color: #0278b3;
   font-size: 23px;
+}
+@media only screen and (min-width: 0px) {
+  .employee-list {
+    padding: 10px 20px 20px 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .employee-list {
+    padding: 10px 100px 20px 100px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .employee-list {
+    padding: 0px 200px 20px 200px;
+  }
 }

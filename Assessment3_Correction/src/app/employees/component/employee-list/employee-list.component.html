@@ -17,7 +17,7 @@
         <!-- search-and-addbtn-block end -->
     </header>
     <!-- end employee header -->
-    <div class="table-container">
+    <div class="table-container" *ngIf="(employee | filter: search).length > 0">
         <table class="table">
             <thead>
                 <tr>
@@ -54,13 +54,14 @@
                     </td>
 
                 </tr>
-<tr  *ngIf="(employee | filter: search).length === 0">
-    <td colspan="9" class="text-center">No data found</td>
-</tr>
+
             </tbody>
  
         </table>
 
+    </div>
+    <div class="text-center mt-5"  *ngIf="(employee | filter: search).length === 0">
+        <span  class="text-center">No data found</span>
     </div>
 </section>
 <!-- employee list section end -->
